@@ -1,44 +1,29 @@
 import logo from "./orebiLogo.png";
 import logoLight from "./logoLight.png";
-import bannerImgOne from "./banner/bannerImgOne.webp";
-import bannerImgTwo from "./banner/bannerImgTwo.webp";
-import bannerImgThree from "./banner/bannerImgThree.webp";
-import saleImgOne from "./sale/saleImgOne.webp";
-import saleImgTwo from "./sale/saleImgTwo.webp";
-import saleImgThree from "./sale/saleImgThree.webp";
+import bannerImgOne from "./banner/bannerImgOne.png";
+import bannerImgTwo from "./banner/bannerImgTwo.png";
+import bannerImgThree from "./banner/bannerImgThree.png";
+
 // ============== Products Start here ====================
 import pdf1 from "../pdf/pdf1.pdf";
 // New Arrivals
-import newArrOne from "./products/newArrival/newArrOne.webp";
-import newArrTwo from "./products/newArrival/newArrTwo.webp";
-import newArrThree from "./products/newArrival/newArrThree.webp";
-import newArrFour from "./products/newArrival/newArrFour.webp";
+
 
 // Best Sellers
-import bestSellerOne from "./products/bestSeller/bestSellerOne.webp";
-import bestSellerTwo from "./products/bestSeller/bestSellerTwo.webp";
-import bestSellerThree from "./products/bestSeller/bestSellerThree.webp";
-import bestSellerFour from "./products/bestSeller/bestSellerFour.webp";
-import imprimante1 from "./products/bestSeller/imprimante1.webp";
-import imprimante2 from "./products/bestSeller/imprimante2.webp";
-import imprimante4 from "./products/bestSeller/imprimante4.webp";
-import imprimante5 from "./products/bestSeller/imprimante5.webp";
-import imprimante6 from "./products/bestSeller/imprimante6.webp";
-import imprimante7 from "./products/bestSeller/imprimante7.webp";
-import imprimante8 from "./products/bestSeller/imprimante8.webp";
-import imprimante9 from "./products/bestSeller/imprimante9.webp";
+
+import imprimante1  from "./products/imprimante1.png";
+import imprimante2 from "./products/imprimante2.png";
+import imprimante4 from "./products/imprimante4.png";
+
 import encre1 from "./products/bestSeller/encre1.webp";
 import encre2 from "./products/bestSeller/encre2.webp";
 import encre3 from "./products/bestSeller/encre3.webp";
-import encre4 from "./products/bestSeller/encre4.webp";
 import bac1 from "./products/bestSeller/bac1.webp";
 import bac2 from "./products/bestSeller/bac2.webp";
 import bac3 from "./products/bestSeller/bac3.webp";
-import bac4 from "./products/bestSeller/bac4.webp";
 import ruban1 from "./products/bestSeller/ruban1.webp";
 import ruban2 from "./products/bestSeller/ruban2.webp";
 import ruban3 from "./products/bestSeller/ruban3.webp";
-import ruban4 from "./products/bestSeller/ruban4.webp";
 
 // Special Offers
 import spfOne from "./products/specialOffer/spfOne.webp";
@@ -81,41 +66,25 @@ export {
   bannerImgOne,
   bannerImgTwo,
   bannerImgThree,
-  saleImgOne,
-  saleImgTwo,
-  saleImgThree,
+  
   // ===================== Products start here ============
   // New Arrivals
-  newArrOne,
-  newArrTwo,
-  newArrThree,
-  newArrFour,
 
-  // Best Sellers
-  bestSellerOne,
-  bestSellerTwo,
-  bestSellerThree,
-  bestSellerFour,
+  
+  
   imprimante1,
   imprimante2,
   imprimante4,
-  imprimante5,
-  imprimante6,
-  imprimante7,
-  imprimante8,
-  imprimante9,
+ 
   encre1,
   encre2,
   encre3,
-  encre4,
   bac1,
   bac2,
   bac3,
-  bac4,
   ruban1,
   ruban2,
   ruban3,
-  ruban4,
 
   // Sprcial Offers
   spfOne,

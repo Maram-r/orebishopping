@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { productOfTheYear } from "../../../assets/images";
-import ShopNow from "../../designLayouts/buttons/ShopNow";
+//import ShopNow from "../../designLayouts/buttons/ShopNow";
 import Image from "../../designLayouts/Image";
 
 const YearProduct = () => {
@@ -14,13 +14,19 @@ const YearProduct = () => {
         />
         <div className="w-full md:w-2/3 xl:w-1/2 h-80 absolute px-4 md:px-0 top-0 right-0 flex flex-col items-start gap-6 justify-center">
           <h1 className="text-3xl font-semibold text-primeColor">
-            Product of The year
+          Multidisciplinary expertise for your insurance needs.
+
+
+
+
+
+
+
           </h1>
           <p className="text-base font-normal text-primeColor max-w-[600px] mr-4">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat
-            cupiditate modi amet! Facilis, aperiam quaerat.
+          Benefit from our multidisciplinary expertise tailored to your insurance requirements. Trust us for comprehensive insurance solutions backed by diverse skills and knowledge.
           </p>
-          <ShopNow />
+          
         </div>
       </div>
     </Link>

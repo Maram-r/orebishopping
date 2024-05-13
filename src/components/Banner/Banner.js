@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import {
   bannerImgOne,
@@ -8,7 +7,7 @@ import {
 } from "../../assets/images";
 import Image from "../designLayouts/Image";
 
-const CustomSlide = ({ Subtext, imgSrc, text, buttonLink, buttonText }) => (
+const CustomSlide = ({ Subtext, imgSrc, text, buttonText }) => (
   <div
     style={{
       position: "relative",
@@ -44,11 +43,7 @@ const CustomSlide = ({ Subtext, imgSrc, text, buttonLink, buttonText }) => (
         {Subtext}
       </p>
 
-      <Link to="/about">
-        <button className="bg-primeColor text-white text-lg font-bodyFont w-[185px] h-[50px] hover:bg-black duration-300 font-bold">
-          {buttonText}
-        </button>
-      </Link>
+      
     </div>
     <div style={{ marginLeft: "100px" }}>
       <Image imgSrc={imgSrc} />
@@ -151,28 +146,25 @@ const Banner = () => {
 
   const slides = [
     {
-      imgSrc: bannerImgOne,
-      text: "Enhance Your Printing Experience",
+      imgSrc: bannerImgThree,
+      text: "Enhance Your Insurance Experience",
       Subtext:
-        "Explore our premium printers and consumables for exceptional results",
-      buttonLink: "/offer",
-      buttonText: "Shop Now",
+        "Explore our premium offers for an exceptional shopping experience ",
+      
     },
     {
-      imgSrc: bannerImgOne,
-      text: "Quality Printing Solutions",
+      imgSrc: bannerImgTwo,
+      text: "Quality Insurance Solutions",
       Subtext:
-        "Discover our wide range of printers and consumables designed for professional printing needs.",
-      buttonLink: "/shop",
-      buttonText: "About-us",
+        "Discover our wide range of Contracts and Claims management.",
+      
     },
     {
       imgSrc: bannerImgOne,
       text: "Efficiency Redefined",
       Subtext:
-        "Maximize productivity with our advanced printers and high-quality consumables. ",
-      buttonLink: "/contact",
-      buttonText: "Contact-us",
+        "Maximize your profits . ",
+      
     },
 
     // Add more slides as needed
