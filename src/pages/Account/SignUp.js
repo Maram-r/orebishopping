@@ -194,7 +194,7 @@ const handleSignUp = async (e) => {
                     type="checkbox"
                   />
                   <p className="text-sm text-primeColor">
-                    I agree to the OREBI{" "}
+                    I agree to the InsureFlow{" "}
                     <span className="text-blue-500">Terms of Service </span>and{" "}
                     <span className="text-blue-500">Privacy Policy</span>.
                   </p>

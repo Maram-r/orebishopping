@@ -10,7 +10,7 @@ const About = () => {
   }, [location]);
   return (
     <div className="max-w-container mx-auto px-4">
-      <Breadcrumbs title="Policy" prevLocation={prevLocation} />
+      <Breadcrumbs title="Police" prevLocation={prevLocation} />
       <div className="pb-10">
         <h1 className="max-w-[600px] text-base text-lightText mb-2">
           <span className="text-primeColor font-semibold text-lg">Police</span>{" "}

@@ -16,12 +16,15 @@ import SignIn from "./pages/Account/SignIn";
 import SignUp from "./pages/Account/SignUp";
 import Cart from "./pages/Cart/Cart";
 import Claim from "./pages/Claim/Claim";
+import ClaimDetails from "./pages/Claim/ClaimDetails";
 import Home from "./pages/Home/Home";
-import Account from "./pages/Insurance/Account";
+import Types from "./pages/Insurance/Types";
 import Offer from "./pages/Offer/Offer";
 import Payment from "./pages/payment/Payment";
 import ProductDetails from "./pages/ProductDetails/ProductDetails";
 import Shop from "./pages/Shop/Shop";
+import Profile from "./pages/Account/Profile";
+import Contracts from "./pages/ProductDetails/Contracts";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -59,12 +62,15 @@ const router = createBrowserRouter(
         <Route path="/shop" element={<Shop />}></Route>
         <Route path="/Police" element={<Police />}></Route>
         <Route path="/Claim" element={<Claim/>}></Route>
-        <Route path="/Insurance" element={<Account />}></Route>
+        <Route path="/ClaimDetails" element={<ClaimDetails />}/>
+        <Route path="/Insurance" element={<Types />}></Route>
         {/* ==================== Header Navlink End here ===================== */}
         <Route path="/category/:category" element={<Offer />}></Route>
         <Route path="/product/:_id" element={<ProductDetails />}></Route>
         <Route path="/cart" element={<Cart />}></Route>
         <Route path="/paymentgateway" element={<Payment />}></Route>
+        <Route path="/Profile" element={<Profile />} />
+        <Route path="/Contracts" element={<Contracts /> } />
       </Route>
       <Route path="/signup" element={<SignUp />}></Route>
       <Route path="/signin" element={<SignIn />}></Route>

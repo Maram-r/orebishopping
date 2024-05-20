@@ -3,11 +3,12 @@ import { useLocation } from "react-router-dom";
 import Breadcrumbs from "../../components/pageProps/Breadcrumbs";
 import ProductInfo from "../../components/pageProps/productDetails/ProductInfo";
 import { FaDownload } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const tabs = [
   {
     id: "Fiche Technique",
-    label: "Fiche Technique",
+    label: "Technical Sheet",
   },
   {
     id: "Description",
@@ -22,8 +23,8 @@ const tabs = [
       <iframe
         width="560"
         height="315"
-        src="https://www.youtube.com/embed/watch?v=6e0yIRDVPlA&list=RD6e0yIRDVPlA&start_radio=1"
-        title="YouTube Video"
+        src="https://youtu.be/7p3W_TokOG4?si=ke_z_bXOjkN0AvUL"
+        title="Ben Tech Pro TV"
         frameBorder="0"
         allowFullScreen
       ></iframe>
@@ -87,7 +88,7 @@ const ProductDetails = () => {
                 key={tab.id}
                 className={activeTab === tab.id ? "" : "hidden"}
               >
-                {tab.id === "Fiche Technique" && productInfo.ficheTech ? (
+                {tab.id === "Technical sheet" && productInfo.ficheTech ? (
                   <div>
                     <table className="table-auto w-full">
                       <tbody>

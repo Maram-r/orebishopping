@@ -83,6 +83,61 @@ app.post('/SignIn', async (req, res) => {
 
 
 
+//------------------------------Claims------------------------------------------//
+
+
+const claimSchema = new mongoose.Schema({
+  clientName: String,
+  email: String,
+  messages: String
+});
+
+const Claim = mongoose.model("Claim", claimSchema);
+
+// POST endpoint to handle form submission
+app.post("/api/Claim", async (req, res) => {
+  try {
+    const { clientName, email, messages } = req.body;
+    
+    // Validation
+    if (!clientName || !email || !messages) {
+      return res.status(400).json({ error: "All fields are required" });
+    }
+
+    const newClaim = new Claim({
+      clientName,
+      email,
+      messages
+    });
+
+    await newClaim.save();
+
+    res.status(201).json({ message: "Claim added successfully" });
+  } catch (error) {
+    res.status(500).json({ error: "Something went wrong" });
+  }
+});
+
+
+
+
+//-----------------------------------Caim Details--------------------------//
+
+
+let claims = [];
+
+app.use(express.json());
+
+app.post('/api/Claim', (req, res) => {
+  const { clientName, email, messages } = req.body;
+  const newClaim = { id: claims.length + 1, clientName, email, messages };
+  claims.push(newClaim);
+  res.status(201).json({ message: "Claim submitted successfully!" });
+});
+
+app.get('/api/Claim', (req, res) => {
+  res.status(200).json(claims);
+});
 
 
 
@@ -100,6 +155,57 @@ app.post('/SignIn', async (req, res) => {
 
 
 
+//------------------------------------------------Contracts Details------------------------------//
+
+
+const contractSchema = new mongoose.Schema({
+  name: {
+    type: String,
+    required: true
+  },
+  email: {
+    type: String,
+    required: true
+  },
+  description: {
+    type: String,
+    required: true
+  },
+  startDate: {
+    type: Date,
+    required: true
+  },
+  endDate: {
+    type: Date,
+    required: true
+  }
+});
+
+// Création du modèle basé sur le schéma
+const Contract = mongoose.model('Contract', contractSchema);
+
+// Route POST pour créer un nouveau contrat
+app.post('/contracts', async (req, res) => {
+  const { name, email, description, startDate, endDate } = req.body;
+  try {
+    const newContract = new Contract({ name, email, description, startDate, endDate });
+    await newContract.save();
+    res.status(201).json(newContract);
+  } catch (error) {
+    res.status(400).json({ message: error.message });
+  }
+});
+
+
+
+app.get('/contracts', async (req, res) => {
+  try {
+    const contracts = await Contract.find();
+    res.status(200).json(contracts);
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+});
 
 
 
